@@ -1,86 +1,182 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+
 </script>
 
 <template>
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Documentation</template>
 
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
-  </WelcomeItem>
+<div class="main-container">
+    
+    <div class="container-one">
+      <div class="profile">
+        <img src="../assets/perfil.jpg" alt="">
+        <h3>Samuel Esdras Navarro</h3>
+        <p class="profession">Software Developer</p>
+      </div>
+      <br>
+      <div class="social-links">
+          <div class="link">
+            <img src="../assets/github2.jpeg" alt="">
+            <a href="https://github.com/samuca-navarro"><h2>GitHub</h2></a>
+          </div>
+          <br>
+          <div class="link">
+            <img src="../assets/ln.jpeg" alt="">
+            <a href="https://br.linkedin.com/in/samuel-navarro-17a60b199"><h2>Linkedin</h2></a>
+          </div>
+      </div>
+    </div>
 
-  <WelcomeItem>
-    <template #icon>
-      <ToolingIcon />
-    </template>
-    <template #heading>Tooling</template>
+    <div class="container-two">
+      <div class="about-me">
+       <h1>About me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit, sed do eiusmod tempor incididunt ut labore et 
+        dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute 
+        irure dolor in reprehenderit in voluptate velit 
+        esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non 
+        proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum</p>
+      </div>
+      <div class="knowledge">
+       <h1>Technologies Studied</h1>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit, sed do eiusmod tempor incididunt ut labore et 
+        dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute 
+        irure dolor in reprehenderit in voluptate velit 
+        esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non 
+        proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum
+       </p>  
+       <!-- <h1>Technologies Studied</h1>
+       <div class="row">
+          <div class="coluna">
+           <img src="../assets/py.jpg" alt="">
+          </div>
+          <div class="coluna">
+           <img src="../assets/js.jpg" alt="">
+          </div>
+       </div> -->
+      </div>
+      <br>
+      <div>
+        <div class="button-container">
+          <div class="projects-button">
+            <a href=""><h2>My Projects</h2></a>
+          </div>
+          <div class="projects-button">
+            <a href="../public/cv.pdf" download target="_blank"><h2>My Resume</h2></a>
+          </div>
+          <div class="projects-button">
+            <a href="../public/cv.pdf" download target="_blank"><h2>Contact me</h2></a>
+          </div>
+        </div>
+      </div>
+    </div>    
+  
+  </div>
 
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank">Cypress Component Testing</a>.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <EcosystemIcon />
-    </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <SupportIcon />
-    </template>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
 </template>
+
+<style scoped>
+
+.profession{
+  text-align: center;
+}
+
+.projects-button a{
+  align-content: center;
+  text-decoration: none;
+  padding: none;
+  color: black;
+}
+
+.projects-button {
+  background-color: rgb(80, 115, 146);
+  margin: 5px; 
+  border-radius: 10%;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 30%;
+}
+
+.profile img{
+  border-radius: 50%;
+}
+
+.link a{
+  text-decoration: none;
+  color:black;
+  text-align: center;
+}
+
+/* .link img{
+  height: 1rem;
+} */
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(161, 159, 156);
+  border-radius: 25px;
+}
+
+.container-one{
+  background-color:rgb(80, 115, 146);
+  padding: 3%;
+  width: 30%;
+  border-radius: 25px;
+}
+
+.container-two{
+  background-color: rgb(161, 159, 156);
+  margin: 2.5%;
+  width: 70%;
+}
+
+.about-me{
+  text-align: left;
+}
+
+img{
+  align-content: center;
+  border-radius: 6%;
+}
+
+h3{
+  text-align: center
+}
+
+a{
+  text-align: center;
+}
+
+.coluna{
+  float: left;
+  width: 50%;
+}
+.row::after {
+  clear: both;
+  display: table;
+}
+
+</style>
+
